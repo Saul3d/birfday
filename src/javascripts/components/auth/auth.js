@@ -15,7 +15,6 @@ const authStringBuilder = () => {
   domString += `<img src=${googleImage} />`;
   domString += '</button>';
   util.printToDom('auth', domString);
-  console.error(document.getElementById('google-auth'));
   document.getElementById('google-auth').addEventListener('click', signMeIn);
 };
 
