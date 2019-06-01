@@ -1,6 +1,6 @@
 import firebase from 'firebase/app';
 import Auth from './components/auth/auth';
-import Birf from './components/birfday/birday';
+import Birfday from './components/birfday/birfday';
 import apiKeys from './helpers/apiKeys.json';
 import myNavbar from './components/myNavbar/myNavbar';
 
@@ -13,7 +13,7 @@ const init = () => {
   myNavbar.navbarEvents();
   authData.checkLoginStatus();
   Auth.authStringBuilder();
-  Birf.birfdayStringBuilder();
+  Birfday.birthdayStringBuilder();
 };
 
 init();
