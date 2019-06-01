@@ -65,15 +65,15 @@ const showFriends = (friends) => {
     domString += `<td>${friend.email}</td>`;
     domString += `<td id=${friend.rsvpId}>`;
     domString += '<div class="custom-control custom-radio custom-control-inline">';
-    domString += `<input type="radio" id="radio1_${friend.id}" name="radios-button_${friend.id}" class="custom-control-input">`;
+    domString += `<input type="radio" id="radio1_${friend.id}" name="radios-button_${friend.id}" class="custom-control-input" ${friend.statusId === 'status2' ? 'checked' : ''}>`;
     domString += `<label class="custom-control-label" for="radio1_${friend.id}">YES</label>`;
     domString += '</div>';
     domString += '<div class="custom-control custom-radio custom-control-inline">';
-    domString += `<input type="radio" id="radio2_${friend.id}" name="radios-button_${friend.id}" class="custom-control-input">`;
+    domString += `<input type="radio" id="radio2_${friend.id}" name="radios-button_${friend.id}" class="custom-control-input${friend.statusId === 'status3' ? 'checked' : ''}>`;
     domString += `<label class="custom-control-label" for="radio2_${friend.id}">No</label>`;
     domString += '</div>';
     domString += '<div class="custom-control custom-radio custom-control-inline">';
-    domString += `<input type="radio" id="radio3_${friend.id}" name="radios-button_${friend.id}" class="custom-control-input">`;
+    domString += `<input type="radio" id="radio3_${friend.id}" name="radios-button_${friend.id}" class="custom-control-input" ${friend.statusId === 'status1' ? 'checked' : ''}>`;
     domString += `<label class="custom-control-label" for="radio3_${friend.id}">Unknown</label>`;
     domString += '</div>';
     domString += '</td>';
