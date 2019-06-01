@@ -1,6 +1,8 @@
 import firebase from 'firebase/app';
 import 'firebase/auth';
 import friends from '../../components/friends/friends';
+import Birfday from '../../components/birfday/birfday';
+
 
 const authDiv = document.getElementById('auth');
 const birfdayDiv = document.getElementById('birfday');
