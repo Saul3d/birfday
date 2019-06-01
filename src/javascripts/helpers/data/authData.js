@@ -18,7 +18,8 @@ const checkLoginStatus = () => {
       birfdayNavbar.classList.remove('hide');
       authNavbar.classList.add('hide');
       logoutNavbar.classList.remove('hide');
-      Birfday.birfdayStringBuilder();
+      console.error('user.uid', user.uid);
+      Birfday.birthdayStringBuilder(user.uid);
       friends.getFriends(user.uid);
     } else {
       authDiv.classList.remove('hide');

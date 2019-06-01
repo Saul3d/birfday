@@ -2,6 +2,7 @@ import birthdayData from '../../helpers/data/birfdayData';
 import util from '../../helpers/util';
 
 const birthdayStringBuilder = (uid) => {
+  console.error(uid);
   birthdayData.getBirthdayByUid(uid)
     .then((birthday) => {
       let domString = `<h1>${birthday.date}</h1>`;
